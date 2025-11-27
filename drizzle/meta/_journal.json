@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1764203402964,
+      "tag": "0000_sour_lilith",
+      "breakpoints": true
+    }
+  ]
+}
