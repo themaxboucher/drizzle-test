@@ -15,6 +15,20 @@
       "when": 1764258770681,
       "tag": "0001_elite_leo",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1764259310109,
+      "tag": "0002_bent_trauma",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1764261264801,
+      "tag": "0003_glorious_blockbuster",
+      "breakpoints": true
     }
   ]
 }
