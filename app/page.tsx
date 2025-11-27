@@ -1,19 +1,15 @@
-"use client";
-
-import { trpc } from "@/app/providers";
+import { TodosList } from "@/components/todos-list";
+import { ListTodo } from "lucide-react";
 
 export default function Page() {
-  const todosQuery = trpc.todo.getAll.useQuery();
-  console.log("todos:", todosQuery.data);
-
   return (
-    <div className="p-4">
-      <h1>Todos</h1>
-      <ul>
-        {todosQuery.data?.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
+    <div className="container mx-auto max-w-4xl p-6 space-y-6">
+      <div className="flex items-center gap-3">
+        <ListTodo className="h-8 w-8 text-primary" />
+        <h1 className="text-4xl font-bold tracking-tight">Todos</h1>
+      </div>
+
+      <TodosList />
     </div>
   );
 }
