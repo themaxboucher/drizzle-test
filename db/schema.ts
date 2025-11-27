@@ -1,8 +1,4 @@
-import { pgTable, serial, text, varchar, timestamp } from "drizzle-orm/pg-core";
+export * from "./tables/todos";
+export * from "./tables/projects";
+export * from "./tables/users";
 
-export const todos = pgTable("todos", {
-  id: serial("id").primaryKey(),
-  title: varchar("title", { length: 256 }).notNull(),
-  completed: text("completed").default("false"),
-  createdAt: timestamp("created_at").defaultNow(),
-});
